@@ -3,8 +3,8 @@ var app = builder.Build();
 
 var items = new List<ItemDTO>
 {
-    new ItemDTO(1, "NVIDIA RTX 4060", 2219.90),
-    new ItemDTO(2, "Memória RAM 8GB DDR5", 2809.99)
+    new ItemDTO(1, "NVIDIA RTX 4060", 2219.98),
+    new ItemDTO(2, "Memória RAM 8GB DDR5", 2809.98)
 };
 
 app.MapGet("/", () => "Central de Peças está online!");
@@ -71,7 +71,6 @@ app.MapDelete("/api/items/{id:int}", (int id) =>
 });
 
 app.Run();
-
 
 record ItemDTO(int Id, string Name, double Price);
 record NewItemDTO(string Name, double Price);
