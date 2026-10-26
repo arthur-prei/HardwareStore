@@ -24,8 +24,7 @@ cd HardwareStore
 ### Execute a aplicação:
 dotnet run
 
-### Após inicializar o projeto, a API deverá estar disponível localmente em:
-http://localhost:5000
+### Após inicializar o projeto, a API deverá estar disponível localmente
 
 #### A porta pode variar dependendo da configuração gerada pelo .NET
 
