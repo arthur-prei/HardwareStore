@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP1\\HardwareStore\\AP1.csproj": {}
+    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP1\\HardwareStore\\AP1.csproj": {
+    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP1\\HardwareStore\\AP1.csproj",
+        "projectUniqueName": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj",
         "projectName": "AP1",
-        "projectPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP1\\HardwareStore\\AP1.csproj",
+        "projectPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj",
         "packagesPath": "C:\\Users\\Arthur Porto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP1\\HardwareStore\\obj\\",
+        "outputPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,18 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

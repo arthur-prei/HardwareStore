@@ -1,71 +1,58 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApiDbContext>(options => options.UseSqlite(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+    ));
+
 var app = builder.Build();
 
-var items = new List<ItemDTO>
-{
-    new ItemDTO(1, "NVIDIA RTX 4060", 2219.98),
-    new ItemDTO(2, "Memória RAM 8GB DDR5", 2809.98)
-};
-
 app.MapGet("/", () => "Central de Peças está online!");
-app.MapGet("/api/items", () =>
-{
-    return Results.Ok(items);
-});
-app.MapGet("/api/items/{id:int}", (int id) =>
-{
-    var item = items.Find(item => item.Id == id);
 
-    if (item is null)
-    {
-        return Results.NotFound("Oops! Não tem nada aqui!");
+
+app.MapGet("/api/items/{id:int}", async (int id, ApiDbContext db) => {
+    var item = await db.Hardware.FindAsync(id);
+
+    if (item is null) {
+        return Results.NotFound();
     }
+
     return Results.Ok(item);
 });
 
+app.MapPost("/api/items", async (HardwareEntity data, ApiDbContext db) => {
+    db.Hardware.Add(data);
 
-app.MapPost("/api/items", (NewItemDTO data) =>
-{   
-    int nextId = items.Count + 1;
-    foreach (ItemDTO item in items)
-    {
-        if (item.Id == nextId)
-        {
-            nextId++;
-        }
-    }
+    await db.SaveChangesAsync();
 
-    var newItem = new ItemDTO(nextId, data.Name, data.Price);
-
-    items.Add(newItem);
-
-    return Results.Created($"/api/items/{newItem.Id}", newItem);
+    return Results.Created($"/api/items/{data.Id}", data);
 });
 
-app.MapPut("/api/items/{id:int}", (int id, NewItemDTO data) =>
-{
-    int index = items.FindIndex(item => item.Id == id);
+app.MapPut("/api/items/{id:int}", async (int id, NewItemDTO data, ApiDbContext db) => {
+    var item = await db.Hardware.FindAsync(id);
 
-    if (index == -1) // verifica se o índice existe ou não
-    {
-        return Results.NotFound("Índice não encontrado");
+    if (item is null) {
+        return Results.NotFound();   
     }
-    var updatedItem = new ItemDTO(id, data.Name, data.Price);
 
-    items[index] = updatedItem;
+    item.Name = data.Name;
+    item.Price = data.Price;
 
-    return Results.Ok(updatedItem);
+    await db.SaveChangesAsync();
+
+    return Results.Ok(item);
 });
 
-app.MapDelete("/api/items/{id:int}", (int id) =>
-{
-    int index = items.FindIndex(item => item.Id == id);
+app.MapDelete("/api/items/{id:int}", async (int id, ApiDbContext db) => {
+    var item = await db.Hardware.FindAsync(id);
 
-    if (index == -1)
-    {
-        return Results.NotFound("Índice não encontrado");
+    if (item is null) {
+        return Results.NotFound();
     }
-    items.RemoveAt(index);
+
+    db.Hardware.Remove(item);
+    await db.SaveChangesAsync();
 
     return Results.NoContent();
 });
@@ -74,3 +61,19 @@ app.Run();
 
 record ItemDTO(int Id, string Name, double Price);
 record NewItemDTO(string Name, double Price);
+
+class HardwareEntity
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; } = string.Empty;
+
+    public double Price { get; set; }
+}
+
+class ApiDbContext : DbContext
+{
+    public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options){}
+
+    public DbSet<HardwareEntity> Hardware => Set<HardwareEntity>();
+}
