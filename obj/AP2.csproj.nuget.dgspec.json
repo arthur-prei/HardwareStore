@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj": {}
+    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj": {
+    "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
+        "projectUniqueName": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
         "projectName": "AP2",
-        "projectPath": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
+        "projectPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
         "packagesPath": "C:\\Users\\Arthur Porto\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\obj\\",
+        "outputPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

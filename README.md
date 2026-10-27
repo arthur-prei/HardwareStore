@@ -237,8 +237,7 @@ No vídeo são demonstrados a execução da aplicação, os testes dos endpoints
 
 ## Vídeos de demonstração — AP1
 
-**Vídeo de Demonstração:**  
-[text](https://youtu.be/DaxC0NB6zwI)
+[Vídeo de Demonstração](https://youtu.be/DaxC0NB6zwI)
 
 ## Tecnologias utilizadas
 
