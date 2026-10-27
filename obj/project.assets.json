@@ -2394,11 +2394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj",
-      "projectName": "AP1",
-      "projectPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP1.csproj",
+      "projectUniqueName": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
+      "projectName": "AP2",
+      "projectPath": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\AP2.csproj",
       "packagesPath": "C:\\Users\\Arthur Porto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\obj\\",
+      "outputPath": "c:\\Users\\Arthur Porto\\OneDrive\\Desktop\\ULBRA\\Desenvolvimento Back-End\\AP2\\HardwareStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
