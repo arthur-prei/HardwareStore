@@ -8,8 +8,15 @@ builder.Services.AddDbContext<ApiDbContext>(options => options.UseSqlite(
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Central de Peças está online!");
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
+app.MapGet("/api", () => "Central de Peças está online!");
+
+app.MapGet("/api/items", async (ApiDbContext db) => {
+    var items = await db.Hardware.ToListAsync();
+    return Results.Ok(items);
+});
 
 app.MapGet("/api/items/{id:int}", async (int id, ApiDbContext db) => {
     var item = await db.Hardware.FindAsync(id);

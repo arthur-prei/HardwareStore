@@ -316,3 +316,7 @@ C:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\Hardwa
 C:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\AP1.pdb
 C:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\AP1.genruntimeconfig.cache
 C:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\ref\AP1.dll
+c:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\bin\Debug\net10.0\AP1.staticwebassets.runtime.json
+c:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\compressed\cp0k96hb19-{0}-7acpe5tmru-7acpe5tmru.gz
+c:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\compressed\1wi5q102be-{0}-jzlj1gwhsx-jzlj1gwhsx.gz
+c:\Users\Arthur Porto\OneDrive\Desktop\ULBRA\Desenvolvimento Back-End\AP2\HardwareStore\obj\Debug\net10.0\compressed\nf18oepuh3-{0}-hzugbce34c-hzugbce34c.gz
