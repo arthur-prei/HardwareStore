@@ -231,13 +231,9 @@ Os testes permitem verificar as respostas HTTP, o funcionamento das operações 
 
 ## Vídeo de demonstração — AP2
 
-**Link do vídeo:** [Adicionar link público do vídeo da AP2]
+**Link do vídeo:** https://youtu.be/DaxC0NB6zwI
 
 No vídeo são demonstrados a execução da aplicação, os testes dos endpoints utilizando o Bruno, o funcionamento do frontend integrado com a API e a persistência dos dados após reiniciar a aplicação.
-
-## Vídeos de demonstração — AP1
-
-[Vídeo de Demonstração](https://youtu.be/DaxC0NB6zwI)
 
 ## Tecnologias utilizadas
 
