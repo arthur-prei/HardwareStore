@@ -271,7 +271,7 @@ Os testes permitem verificar as respostas HTTP, o funcionamento das operações 
 
 ## Vídeo de demonstração — AS
 
-**Link do vídeo:** [Adicionar link público do vídeo da AS]
+https://youtu.be/YjIEjYjYLc0
 
 No vídeo são demonstrados:
 
