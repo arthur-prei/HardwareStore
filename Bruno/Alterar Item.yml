@@ -1,0 +1,23 @@
+info:
+  name: Alterar Item
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:5150/api/items/1
+  body:
+    type: json
+    data: |-
+      {
+        "Name": "Teste",
+        "Price": 1000.11
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
